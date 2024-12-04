@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIS: AgriImpactSuite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            background-color: lightyellow;
+        }
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 4.5em;
+        }
+        header p {
+            font-size: 2.2em;
+            margin: 10px 0 0;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: darkblue;
+            border-bottom: 2px solid #ffa500;
+            padding-bottom: 5px;
+        }
+        a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-links, .resources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .download-links a, .resources a {
+            background-color: darkblue;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            flex: 1;
+            max-width: 200px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .download-links a:hover, .resources a:hover {
+            background-color: #006400;
+        }
+        footer {
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+	<header style="display: flex; align-items: center; justify-content: space-between; padding: 20px; background-color: darkblue; color: white;">
+		<!-- Left Logo -->
+		<img src="icar_logo.jpg" alt="Left Logo" style="width: 100px; height: auto; padding: 0 20px;">
+
+		<!-- Center Content -->
+		<div style="text-align: center; flex-grow: 1;">
+			<h1 style="margin: 0; font-size: 4.5em;">AIS: AgriImpactSuite</h1>
+			<p style="font-size: 2.2em; margin: 10px 0 0;">Evaluate the Economic Impact of Agricultural Research</p>
+		</div>
+
+		<!-- Right Logo -->
+		<img src="cssri_logo.jpg" alt="Right Logo" style="width: 100px; height: auto; padding: 0 20px;">
+		<img src="niap_logo.jpeg" alt="Right Logo" style="width: 100px; height: auto; padding: 0 20px;">
+		<img src="iasri_logo.jpg" alt="Right Logo" style="width: 90px; height: auto; padding: 0 20px;">
+	</header>
+
+    <main>
+
+		<section>
+			<h2>AIS: AgriImpactSuite</h2>
+			<p>AIS: AgriImpactSuite is a GUI application developed for performing complex agricultural or economic calculations related to adoption rates, economic surplus, risk reduction benefits, and the impact of technology adoption on poverty reduction. This software is built using the Python language and utilizes libraries like <code>Tkinter</code> (for GUI), <code>NumPy</code>, <code>Matplotlib</code>, <code>SciPy</code>, and <code>Pandas</code> for mathematical operations, plotting, and data manipulation.</p>
+
+			<h3>AIS: AgriImpactSuite Modules</h3>
+			<ul>
+				<li>
+					<strong>Estimation of Adoption Rate:</strong> Calculates the adoption rate of a particular agricultural practice or technology over time, based on factors like the initial adoption rate, present adoption rate, maximum adoption rate, and year of inception of the technology.
+				</li>
+				<li>
+					<strong>Estimation of Economic Surplus:</strong> Computes economic benefits (surplus) based on factors such as base year price & quantity, yield change, cost change, and elasticity of supply and demand. It provides the option to estimate the consumer surplus, producer surplus, and total economic surplus generated from technology adoption.
+				</li>
+				<li>
+					<strong>Risk Reduction Benefit:</strong> Assesses how implementing certain agricultural practices could reduce risk, using parameters like the relative risk aversion coefficient and coefficients of variation under control and improved conditions.
+				</li>
+				<li>
+					<strong>Poverty Reduction Effect:</strong> Estimates the impact of agricultural improvements on poverty reduction in a specific area. It factors in parameters such as the agricultural GDP (AgGDP), elasticity of poverty, and the number of poor people in the domain area.
+				</li>
+			</ul>
+
+			<h3>PARC: Present-year Adoption Rate Calculator</h3>
+			<p>
+				PARC is a sub-module of the AgrImpactSuite software designed to calculate the adoption rate of a specific agricultural technology or intervention for the present year. The PARC tool helps in estimating how agricultural technologies (such as improved seed varieties) are adopted in a given region over time.
+			</p>
+			<p>
+				The PARC sub-module calculates the present-year adoption rate of agricultural technology based on various inputs like seed rate, multiplication factor, and crop area. It allows users to input data, calculate the rate, and save results for analysis.
+			</p>
+		</section>
+
+
+		<div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+			<img src="screenshot1.png" alt="AIS screenshot 1" style="width: 30%; height: auto;">
+			<img src="screenshot2.png" alt="AIS screenshot 2" style="width: 25%; height: 25%;">
+		</div>
+
+        <section>
+            <h2>Download AIS: AgriImpactSuite</h2>
+            <div class="download-links">
+                <a href="download.html">Download Page</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <div class="resources">
+                <a href="#" target="_blank">User Manual</a>
+                <a href="#" target="_blank">Tutorial Video</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Economic Surplus Analysis:</strong> Quantifies social benefits from agricultural technologies.</li>
+                <li><strong>Accessible to Non-Economists:</strong> User-friendly interface and minimal technical requirements.</li>
+                <li><strong>Practical Exercises:</strong> Built-in modules for hands-on learning with real-world data.</li>
+                <li><strong>Real-Case Examples:</strong> Includes case studies on crop varietal impacts.</li>
+                <li><strong>Policy Insights:</strong> Guides policymakers in interpreting research value.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Application Areas</h2>
+            <ul>
+                <li><strong>Impact Assessments:</strong> Evaluate returns on research investments.</li>
+                <li><strong>Policy Support:</strong> Provide evidence-based insights for funding decisions.</li>
+                <li><strong>Resource Allocation:</strong> Identify research areas with maximum societal benefits.</li>
+                <li><strong>Technology Evaluation:</strong> Measure adoption impacts of agricultural innovations.</li>
+            </ul>
+        </section>
+ 
+ </main>
+    <footer>
+        <p>Developed by :
+		<br>
+		<br>ICAR-Central Soil Salinity Research Institute, Karnal, Haryana, India
+		<br>ICAR-National Institute of Agricultural Economics and Policy Research, New Delhi, India
+		<br>ICAR-Indian Agricultural Statistics Research Institute, New Delhi, India
+		<br>
+		<br>Contact us at <a href="mailto:rajni.niap.impact@gmail.com">rajni.niap.impact@gmail.com</a></p>
+    </footer>
+</body>
+</html>
